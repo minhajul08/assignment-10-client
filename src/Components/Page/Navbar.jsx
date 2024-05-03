@@ -2,9 +2,6 @@
 import { useContext } from "react";
 import {  Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import logo from "../../assets/user.png";
-
-
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
     const handelSignOut = () => {
@@ -13,7 +10,7 @@ const Navbar = () => {
                 console.log(result.user)
             })
             .catch(error => {
-                console.log(error.message)
+                console.log(error.message) 
             })
     }
    
@@ -37,7 +34,7 @@ const Navbar = () => {
                       
                     </ul>
                 </div>
-                <img className="w-16 object-fill mix-blend-multiply" src={logo} alt="" />
+              
                 <h1 className="text-3xl font-bold">Tour Ease</h1>
             </div>
             <div className="navbar-center hidden lg:flex">

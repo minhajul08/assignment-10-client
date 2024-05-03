@@ -1,7 +1,9 @@
 const AllTouristsSpot = () => {
+   
+   
     return (
         <div>
-             AllTouristsSpot
+            ALl
         </div>
     );
 };
