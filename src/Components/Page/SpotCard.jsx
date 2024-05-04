@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const SpotCard = ({spots}) => {
-    const {spot,country,season,cost,location,description,visitor,time,name,email,photo} = spots;
+    const {spot,country,season,cost,location,description,visitor,time,name,email,photo,_id} = spots;
     return (
         
             <div className="card card-compact  bg-base-100 shadow-xl">
@@ -15,8 +15,8 @@ const SpotCard = ({spots}) => {
         <p>Average Cost :{cost}</p>
     </div>
     <div className="card-actions">
-      <Link to='/touristDetails'>
-      <button className="btn btn-primary">Details</button></Link>
+      <Link to={`/touristDetails/${_id}`}>
+      <button className="btn bg-orange-600 text-white">Details</button></Link>
     </div>
   </div>
 </div>

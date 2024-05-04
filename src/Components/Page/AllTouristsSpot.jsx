@@ -1,9 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+import Navbar from "./Navbar";
+
 const AllTouristsSpot = () => {
-   
+   const allSpot = useLoaderData ();
+   console.log (allSpot)
    
     return (
         <div>
-            ALl
+            <Navbar></Navbar>
+            <p>all spot {allSpot.length}</p>
         </div>
     );
 };

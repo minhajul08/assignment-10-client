@@ -1,9 +1,12 @@
 import Swal from "sweetalert2";
 import Navbar from "./Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const AddTouristsSpot = () => {
-
+    const { user } = useContext(AuthContext) || {};
+    console.log (user);
     const handelAddSpot = e => {
         e.preventDefault ();
         const form = e.target;
@@ -16,7 +19,7 @@ const AddTouristsSpot = () => {
         const visitor = form.visitor.value;
         const time = form.time.value;
         const name = form.name.value;
-        const email = form.email.value;
+        const email = user.email;
         const photo = form.photo.value;
         const addTouristsSpot = {spot,country,season,cost,location,description,visitor,time,name,email,photo}
         

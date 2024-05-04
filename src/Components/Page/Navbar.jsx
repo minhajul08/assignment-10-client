@@ -58,8 +58,8 @@ const Navbar = () => {
                 }
                 {
                     user ?
-                        <button onClick={handelSignOut} className="btn bg-green-600 text-white font-bold">Sign out</button> : 
-                        <Link to="/login"><button className="btn bg-green-600 text-white font-bold">Login</button></Link> 
+                        <button onClick={handelSignOut} className="btn bg-orange-600 text-white font-bold">Sign out</button> : 
+                        <Link to="/login"><button className="btn bg-orange-600 text-white font-bold">Login</button></Link> 
                         
                 }
             </div>

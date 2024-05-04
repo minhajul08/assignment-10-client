@@ -36,7 +36,7 @@ const AuthProvider = ({children}) => {
 
     useEffect (() => {
       const unSubscribe = onAuthStateChanged (auth,currentUser => {
-            console.log ('use see in the sky',currentUser)
+            console.log ('user see in the sky',currentUser)
             setUser (currentUser)
             setLoading (false)
         })
