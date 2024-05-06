@@ -17,7 +17,7 @@ const AllTouristsSpot = () => {
 
   return (
     <div>
-      <div className="mx-10">
+      <div className="mx-3 md:mx-5 lg:mx-10">
         <Helmet>
           <title>All tourists spot</title>
         </Helmet>
