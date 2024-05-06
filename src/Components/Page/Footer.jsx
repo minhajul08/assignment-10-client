@@ -18,10 +18,10 @@ const Footer = () => {
     <a className="link link-hover">Data Policy</a>
   </nav> 
   <nav>
-    <h6 className="footer-title">Legal</h6> 
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <h6 className="footer-title">Contact</h6> 
+    <a className="link link-hover">2972 Dhaka , Bangladesh</a>
+    <a className="link link-hover text-orange-600">+(880) 1834-875678</a>
+    <a className="link link-hover">tourease@gmail.com</a>
   </nav>
 </footer> 
 <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
