@@ -75,6 +75,7 @@ const Login = () => {
   }
   return (
     <div>
+      <div className="mx-3 lg:mx-10 my-5">
       <Navbar></Navbar>
       <Helmet>
         <title>Login</title>
@@ -103,7 +104,7 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-green-600 text-white text-lg ">Login</button>
+                <button className="btn bg-orange-600 text-white text-lg ">Login</button>
               </div>
               {
                 <p className="mx-auto mb-1">Don't have account? <Link className="text-blue-600 font-bold hover:underline " to="/register">Register</Link></p>
@@ -126,13 +127,17 @@ const Login = () => {
         </div>
         
       </div>
-      <Footer>  {
+     
+
+    </div>
+    <div>
+    <Footer>  {
         loginError
       }
         {
           loginSuccess
         }</Footer>
-
+    </div>
     </div>
   );
 };

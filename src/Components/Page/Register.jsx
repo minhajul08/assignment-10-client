@@ -63,7 +63,8 @@ const Register = () => {
 
   // }
   return (
-    <div>
+   <div>
+     <div className="mx-3 lg:mx-10 my-5">
       <Navbar></Navbar>
        <Helmet>
         <title>Register</title>
@@ -118,7 +119,7 @@ const Register = () => {
               </div>
              
               <div className="form-control mt-6">
-                <button className="btn bg-green-600 text-white text-xl">Register</button>
+                <button className="btn bg-orange-600 text-white text-xl">Register</button>
               </div>
             </form>
 
@@ -132,15 +133,19 @@ const Register = () => {
 
         </div>
       </div>
-      <Footer> {
+    
+   
+    </div>
+    <div>
+    <Footer> {
                 registerError
               }
               {
                 registerSuccess
               }
              </Footer>
-   
     </div>
+   </div>
   );
 };
 

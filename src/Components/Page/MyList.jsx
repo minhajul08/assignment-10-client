@@ -54,7 +54,7 @@ const MyList = () => {
   
     return (
        <div className="">
-         <div className="mx-3 lg:mx-10">
+         <div className="mx-3 lg:mx-10 min-h-[60vh]">
             <Navbar></Navbar>
             <Helmet>
               <title>MyList</title>

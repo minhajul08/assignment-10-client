@@ -42,7 +42,7 @@ const AllTouristsSpot = () => {
           {
             allSpot.map(all => <div key={all._id}>
               <div className="card card-compact  bg-base-100 shadow-xl">
-                <figure><img className="w-96 h-52" src={all.photo} alt="Shoes" /></figure>
+                <figure><img className="w-96 h-52" src={all.photo} alt="coming soon" /></figure>
                 <div className="card-body">
                   <h2 className="text-gray-500 text-bold text-xl">{all.location}</h2>
                   <p className="font-bold text-2xl">{all.description.slice(0, 50)}</p>

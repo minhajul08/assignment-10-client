@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
+import Footer from "./Footer";
 
 
 const AddTouristsSpot = () => {
@@ -41,12 +42,13 @@ const AddTouristsSpot = () => {
         // console.log (addTouristsSpot);
      }
     return (
-        <div>
+       <div>
+         <div className="mx-3 lg:mx-10">
             <Helmet>
                 <title>Add tourist spot</title>
             </Helmet>
             <Navbar></Navbar>
-            <div className="bg-[#F4F3F0] p-10">
+            <div className="bg-[#F4F3F0] p-10 my-5">
         <h2 className="text-3xl font-extrabold text-center mb-4">All Tourists Spot</h2>
         <form onSubmit={handelAddSpot}>
             {/* tourists Spot Name & country Name */}
@@ -160,10 +162,12 @@ const AddTouristsSpot = () => {
                      <input className="input input-bordered join-item w-full mb-8" name="photo" placeholder="Enter PhotoURL " />
                 </div>
                 </div>
-                <input type="submit" className="btn btn-block" value="Add to Coffee" />
+                <input type="submit" className="btn bg-orange-600 btn-block text-white " value="Add to Coffee" />
         </form>
     </div>
         </div>
+        <Footer></Footer>
+       </div>
     );
 };
 
