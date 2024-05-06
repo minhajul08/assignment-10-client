@@ -54,7 +54,7 @@ const MyList = () => {
   
     return (
        <div className="">
-         <div className="mx-10">
+         <div className="mx-3 lg:mx-10">
             <Navbar></Navbar>
             <Helmet>
               <title>MyList</title>
@@ -62,11 +62,11 @@ const MyList = () => {
             <div className="mx-auto text-center ">
             <h1 className="text-3xl font-bold  my-5">My List</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
             {
                 spots.map (mySpot => <div key={mySpot._id}>
                      <div className="card card-compact  bg-base-100 shadow-xl">
-  <figure><img className="w-96 h-52" src={mySpot.photo} alt="Shoes" /></figure>
+  <figure><img className="w-96 h-52" src={mySpot.photo} alt={mySpot.spot} /></figure>
   <div className="card-body">
     <h2 className="text-gray-500 text-bold text-xl">{mySpot.location}</h2>
     <p className="font-bold text-2xl">{mySpot.description.slice(0,50)}</p>
