@@ -19,7 +19,7 @@ const TravelGuides = () => {
                  <div className="mx-3 space-y-5">
                  <h1 className="capitalize text-2xl font-bold mt-5">10 best places to visit in dalhousie himachal</h1>
                  <hr className="w-10 text-gray-500 text-bold"></ hr>
-                 <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi veritatis similique tempora beatae deserunt consequuntur al!</p>
+                 <p className="text-gray-500">We are one of the world’s largest travel sellers on tours and cruises. With tour operator volume buys plus our low everyday prices you can save up  versus assembling the same itinerary on your own!</p>
                  </div>
                   
                   <div className="flex items-center my-5 mx-3">
@@ -39,7 +39,7 @@ const TravelGuides = () => {
                  <div className="mx-3 space-y-5">
                  <h1 className="capitalize text-2xl font-bold mt-5">the impact of covid-19 on travel & tourism industry in future</h1>
                  <hr className="w-10 text-gray-500 text-bold"></ hr>
-                 <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi veritatis similique tempora beatae deserunt consequuntur al!</p>
+                 <p className="text-gray-500">We are one of the world’s largest travel sellers on tours and cruises. With tour operator volume buys plus our low everyday prices you can save up  versus assembling the same itinerary on your own!</p>
                  </div>
                   
                   <div className="flex items-center my-5 mx-3">
@@ -58,7 +58,7 @@ const TravelGuides = () => {
                  <div className="mx-3 space-y-5">
                  <h1 className="capitalize text-2xl font-bold mt-5">top 15 summer holiday destination in india for 2024</h1>
                  <hr className="w-10 text-gray-500 text-bold"></ hr>
-                 <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi veritatis similique tempora beatae deserunt consequuntur al!</p>
+                 <p className="text-gray-500">We are one of the world’s largest travel sellers on tours and cruises. With tour operator volume buys plus our low everyday prices you can save up  versus assembling the same itinerary on your own!</p>
                  </div>
                   
                   <div className="flex items-center my-5 mx-3">
