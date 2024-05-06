@@ -5,12 +5,16 @@ import SpotCard from "./SpotCard";
 import Footer from "./Footer";
 import Booking from "./Booking";
 import TravelGuides from "./TravelGuides";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
     const touristsSpot = useLoaderData ().slice(0,6);
     return (
        <div>
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
          <div className="mx-3 md:mx-10 mb-3 md:mb-10">
             <Navbar></Navbar>
               <Slider></Slider>

@@ -5,6 +5,7 @@ import { FaChartArea } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { MdOutlineVisibility, MdOutlineWatchLater } from "react-icons/md";
+import { Helmet } from "react-helmet";
 
 
 const DetailsPage = () => {
@@ -16,6 +17,9 @@ const DetailsPage = () => {
         <div>
             <div className="mx-10">
                 <Navbar></Navbar>
+                <Helmet>
+                    <title>Tourist spot details</title>
+                </Helmet>
                 <div className="grid grid-cols-1 md:grid-cols-7 md:gap-10 lg:gap-20 my-5 lg:my-10">
                     <div className="col-span-3 ">
                         <img className="h-full rounded-lg" src={photo} alt={spot} />

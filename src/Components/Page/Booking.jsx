@@ -5,12 +5,12 @@ const Booking = () => {
         <div >
            <div className="text-center my-10 space-y-5 font-bold">
            <h1 className="">Why Booking with us</h1>
-            <h2 className="md:text-4xl md:mx-96">
+            <h2 className="md:text-4xl mx-10 lg:mx-96">
                 Convenient and Easy Tour
                 Booking Process
             </h2>
            </div>
-           <div className="flex gap-4">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="border-r border-dashed text-center">
                <div>
                <img  className="mx-auto" src="https://i.ibb.co/B2jgYtC/icons8-tour-80.png" alt="" />

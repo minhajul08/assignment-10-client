@@ -16,6 +16,7 @@ import MyList from './Components/Page/MyList';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 // import ErrorPage from './Components/Page/ErrorPage';
 import DetailsPage from './Components/Page/DetailsPage';
+import Update from './Components/Page/Update';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
-        loader: () => fetch ('http://localhost:5000/addTouristSpot')
+        loader: () => fetch ('https://assignment-10-server-sigma-flax.vercel.app/addTouristSpot')
       },
       {
         path:'/login',
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
       {
         path:'/allTouristSpot',
         element:<AllTouristsSpot></AllTouristsSpot>,
-        loader: () => fetch ('http://localhost:5000/addTouristSpot')
+        loader: () => fetch ('https://assignment-10-server-sigma-flax.vercel.app/addTouristSpot')
       },
       {
         path:'/addTouristsSpot',
@@ -58,7 +59,13 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <DetailsPage></DetailsPage>
         </PrivateRoute>,
-        loader: () => fetch ('http://localhost:5000/addTouristSpot')
+        loader: () => fetch ('https://assignment-10-server-sigma-flax.vercel.app/addTouristSpot')
+      },
+      {
+        path:'/update/:id',
+        element:<PrivateRoute>
+          <Update></Update>
+        </PrivateRoute>
       }
    
     ]
