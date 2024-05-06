@@ -53,16 +53,16 @@ const MyList = () => {
       }
   
     return (
-       <div className="flex flex-col">
+       <div className="">
          <div className="mx-10">
             <Navbar></Navbar>
             <Helmet>
               <title>MyList</title>
             </Helmet>
-            <div className="mx-auto text-center">
+            <div className="mx-auto text-center ">
             <h1 className="text-3xl font-bold  my-5">My List</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {
                 spots.map (mySpot => <div key={mySpot._id}>
                      <div className="card card-compact  bg-base-100 shadow-xl">
@@ -99,7 +99,7 @@ const MyList = () => {
         </div>
         
         </div>
-       <div className="flex-grow">
+       <div >
        <Footer></Footer>
        </div>
        </div>
